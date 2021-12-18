@@ -1,0 +1,20 @@
+h1 {
+    font-family: sans-serif;
+    font-size: 90px;
+    text-align: center;
+    color: rgb(4, 11, 36);
+}
+
+ul > li {
+    font-family: sans-serif;
+    text-align:left;
+    color:rgb(15, 15, 15);
+    margin-bottom: 1em;
+}
+
+#bg{
+    background-size: 1800px 900px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+}

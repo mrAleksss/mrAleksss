@@ -1,0 +1,14 @@
+{% extends "campaigns/layout.html" %}
+{% load static %}
+
+
+{% block body %}
+    <body id="bg" style="background-image: url('{% static "campaigns/picture.jpg" %}')";>
+    <link href="{% static 'campaigns/styles.css' %}" rel="stylesheet">
+    <h1>Vacancies:</h1>
+    <ul>
+        {% for vacancy in campaigns %}
+           <li><a href="{% url 'vacancy' vacancy.id %}">Vacancy:{{ vacancy.id }}: {{ vacancy.employer }}:offers role {{ vacancy.role }}</li>
+        {% endfor %}   
+    </ul>
+{% endblock %}
